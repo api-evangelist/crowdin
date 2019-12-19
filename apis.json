@@ -1,0 +1,82 @@
+{
+    "name": "crowdin",
+    "description": "Crowdin is a localization project management platfom and translation tool for developers and website owners. We make it easy to work with content being translated using our collaboration platform.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/567-crowdin.jpg",
+    "tags": [
+        "api provider",
+        "have api",
+        "languages",
+        "translations"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/crowdin\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "crowdin",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/567-crowdin.jpg",
+            "humanURL": "https:\/\/crowdin.net\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/crowdin-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/api.crowdin.com\/api\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.crowdin.net\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds.feedburner.com\/crowdin-blog"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/crowdin"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/crowdin"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/crowdin.com\/page\/api"
+        },
+        {
+            "type": "Email",
+            "url": "support@crowdin.com"
+        },
+        {
+            "type": "Email",
+            "url": "sales@crowdin.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/crowdin"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/crowdin.com\/pricing"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/crowdin"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/crowdin.net\/"
+        }
+    ]
+}
