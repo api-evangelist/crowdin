@@ -12,89 +12,91 @@ description: >-
   domain (e.g. https://{domain}.api.crowdin.com).
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Localization
-  - Translation
-  - TMS
-  - REST
-  - GraphQL
-  - Developer Tools
-  - Enterprise
+- Localization
+- Translation
+- TMS
+- REST
+- GraphQL
+- Developer Tools
+- Enterprise
 created: '2026-05-23'
 modified: '2026-05-23'
 specificationVersion: '0.19'
 apis:
-  - aid: crowdin:api-v2
-    name: Crowdin REST API v2
-    description: >-
-      Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources
-      include projects, files, source strings, string translations, string
-      comments, screenshots, glossaries, MT engines, TMs, tasks, workflows,
-      reports, distributions, webhooks, users, groups, and OAuth applications.
-      Authenticate with a Personal Access Token or OAuth 2 bearer token.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://support.crowdin.com/developer/api/v2/
-    baseURL: https://api.crowdin.com/api/v2
-    tags:
-      - REST
-      - Projects
-      - Files
-      - Strings
-      - Translations
-      - Screenshots
-      - Glossaries
-      - Webhooks
-    properties:
-      - type: Documentation
-        url: https://support.crowdin.com/developer/api/v2/
-      - type: DeveloperPortal
-        url: https://support.crowdin.com/developer/
-      - type: SDK
-        title: JavaScript/TypeScript
-        url: https://github.com/crowdin/crowdin-api-client-js
-      - type: SDK
-        title: Python
-        url: https://pypi.org/project/crowdin-api-client/
-      - type: SDK
-        title: PHP
-        url: https://packagist.org/packages/crowdin/crowdin-api-client
-      - type: SDK
-        title: .NET
-        url: https://www.nuget.org/packages/Crowdin.Api/
-      - type: SDK
-        title: Java
-        url: https://github.com/crowdin/crowdin-api-client-java
-      - type: SDK
-        title: Ruby
-        url: https://github.com/crowdin/crowdin-api-client-ruby
-  - aid: crowdin:graphql
-    name: Crowdin GraphQL API
-    description: >-
-      Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via
-      Bearer token using a Personal Access Token or OAuth 2 access token.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-    humanURL: https://support.crowdin.com/developer/graphql-api/
-    baseURL: https://api.crowdin.com/api/graphql
-    tags:
-      - GraphQL
-      - Enterprise
-    properties:
-      - type: Documentation
-        url: https://support.crowdin.com/developer/graphql-api/
-common:
-  - type: Website
-    url: https://crowdin.com/
+- aid: crowdin:api-v2
+  name: Crowdin REST API v2
+  description: >-
+    Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources
+    include projects, files, source strings, string translations, string
+    comments, screenshots, glossaries, MT engines, TMs, tasks, workflows,
+    reports, distributions, webhooks, users, groups, and OAuth applications.
+    Authenticate with a Personal Access Token or OAuth 2 bearer token.
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - REST
+  - Projects
+  - Files
+  - Strings
+  - Translations
+  - Screenshots
+  - Glossaries
+  - Webhooks
+  properties:
   - type: Documentation
+    url: https://support.crowdin.com/developer/api/v2/
+  - type: DeveloperPortal
     url: https://support.crowdin.com/developer/
-  - type: GitHub
-    url: https://github.com/crowdin
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/crowdin
-  - type: Plans
-    url: plans/crowdin-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/crowdin-rate-limits.yml
-  - type: FinOps
-    url: finops/crowdin-finops.yml
+  - type: SDK
+    title: JavaScript/TypeScript
+    url: https://github.com/crowdin/crowdin-api-client-js
+  - type: SDK
+    title: Python
+    url: https://pypi.org/project/crowdin-api-client/
+  - type: SDK
+    title: PHP
+    url: https://packagist.org/packages/crowdin/crowdin-api-client
+  - type: SDK
+    title: .NET
+    url: https://www.nuget.org/packages/Crowdin.Api/
+  - type: SDK
+    title: Java
+    url: https://github.com/crowdin/crowdin-api-client-java
+  - type: SDK
+    title: Ruby
+    url: https://github.com/crowdin/crowdin-api-client-ruby
+- aid: crowdin:graphql
+  name: Crowdin GraphQL API
+  description: >-
+    Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via
+    Bearer token using a Personal Access Token or OAuth 2 access token.
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://support.crowdin.com/developer/graphql-api/
+  baseURL: https://api.crowdin.com/api/graphql
+  tags:
+  - GraphQL
+  - Enterprise
+  properties:
+  - type: Documentation
+    url: https://support.crowdin.com/developer/graphql-api/
+  - url: graphql/crowdin-graphql.md
+    type: GraphQL
+common:
+- type: Website
+  url: https://crowdin.com/
+- type: Documentation
+  url: https://support.crowdin.com/developer/
+- type: GitHub
+  url: https://github.com/crowdin
+- type: LinkedIn
+  url: https://www.linkedin.com/company/crowdin
+- type: Plans
+  url: plans/crowdin-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/crowdin-rate-limits.yml
+- type: FinOps
+  url: finops/crowdin-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
