@@ -1,0 +1,528 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Crowdin REST API v2",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Projects",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List projects",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List projects"
+        },
+        {
+          "info": {
+            "name": "Add project",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add project"
+        },
+        {
+          "info": {
+            "name": "Get project",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get project"
+        },
+        {
+          "info": {
+            "name": "Edit project",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Edit project"
+        },
+        {
+          "info": {
+            "name": "Delete project",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete project"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List files",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/files",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List files"
+        },
+        {
+          "info": {
+            "name": "Add file",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/files",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add file"
+        },
+        {
+          "info": {
+            "name": "Get file",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/files/:fileId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get file"
+        },
+        {
+          "info": {
+            "name": "Delete file",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/files/:fileId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete file"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "SourceStrings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List source strings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/strings",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List source strings"
+        },
+        {
+          "info": {
+            "name": "Add source string",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/strings",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add source string"
+        },
+        {
+          "info": {
+            "name": "Get source string",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/strings/:stringId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "stringId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get source string"
+        },
+        {
+          "info": {
+            "name": "Delete source string",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/strings/:stringId",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "stringId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete source string"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "StringTranslations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List string translations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/translations",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "stringId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "languageId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List string translations"
+        },
+        {
+          "info": {
+            "name": "Add translation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/translations",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add translation"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Screenshots",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List screenshots",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/screenshots",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List screenshots"
+        },
+        {
+          "info": {
+            "name": "Add screenshot",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/screenshots",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add screenshot"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Glossaries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List glossaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/glossaries"
+          },
+          "docs": "List glossaries"
+        },
+        {
+          "info": {
+            "name": "Add glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/glossaries",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add glossary"
+        },
+        {
+          "info": {
+            "name": "Get glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/glossaries/:glossaryId",
+            "params": [
+              {
+                "name": "glossaryId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get glossary"
+        },
+        {
+          "info": {
+            "name": "Delete glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.crowdin.com/api/v2/glossaries/:glossaryId",
+            "params": [
+              {
+                "name": "glossaryId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete glossary"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Webhooks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List webhooks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/webhooks",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List webhooks"
+        },
+        {
+          "info": {
+            "name": "Add webhook",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/webhooks",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add webhook"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
