@@ -10,7 +10,7 @@ description: >-
   Official client libraries are published for JavaScript/TypeScript, Python,
   PHP, .NET, Java, and Ruby. Crowdin Enterprise customers get a per-tenant
   domain (e.g. https://{domain}.api.crowdin.com).
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Localization
 - Translation
@@ -31,7 +31,7 @@ apis:
     comments, screenshots, glossaries, MT engines, TMs, tasks, workflows,
     reports, distributions, webhooks, users, groups, and OAuth applications.
     Authenticate with a Personal Access Token or OAuth 2 bearer token.
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
   tags:
@@ -71,7 +71,7 @@ apis:
   description: >-
     Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via
     Bearer token using a Personal Access Token or OAuth 2 access token.
-  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://support.crowdin.com/developer/graphql-api/
   baseURL: https://api.crowdin.com/api/graphql
   tags:
