@@ -48,22 +48,22 @@ apis:
     url: https://support.crowdin.com/developer/api/v2/
   - type: DeveloperPortal
     url: https://support.crowdin.com/developer/
-  - type: SDK
+  - type: SDKs
     title: JavaScript/TypeScript
     url: https://github.com/crowdin/crowdin-api-client-js
-  - type: SDK
+  - type: SDKs
     title: Python
     url: https://pypi.org/project/crowdin-api-client/
-  - type: SDK
+  - type: SDKs
     title: PHP
     url: https://packagist.org/packages/crowdin/crowdin-api-client
-  - type: SDK
+  - type: SDKs
     title: .NET
     url: https://www.nuget.org/packages/Crowdin.Api/
-  - type: SDK
+  - type: SDKs
     title: Java
     url: https://github.com/crowdin/crowdin-api-client-java
-  - type: SDK
+  - type: SDKs
     title: Ruby
     url: https://github.com/crowdin/crowdin-api-client-ruby
 - aid: crowdin:graphql
