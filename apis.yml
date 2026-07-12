@@ -83,6 +83,14 @@ apis:
   - url: graphql/crowdin-graphql.md
     type: GraphQL
 common:
+- type: TrustCenter
+  url: security/crowdin-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/crowdin-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/crowdin-domain-security.yml
+- type: Authentication
+  url: authentication/crowdin-authentication.yml
 - type: Website
   url: https://crowdin.com/
 - type: Documentation
@@ -97,6 +105,8 @@ common:
   url: rate-limits/crowdin-rate-limits.yml
 - type: FinOps
   url: finops/crowdin-finops.yml
+- type: Blog
+  url: https://blog.crowdin.com/feed.xml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

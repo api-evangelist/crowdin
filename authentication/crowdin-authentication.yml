@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/crowdin-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BearerAuth
+  type: http
+  scheme: bearer
+  bearerFormat: PAT
+  description: Personal Access Token or OAuth 2 bearer token
+  sources:
+  - openapi/crowdin-openapi.yml
