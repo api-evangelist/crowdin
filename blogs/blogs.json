@@ -1,0 +1,13 @@
+{
+  "repo": "crowdin",
+  "feeds": [
+    {
+      "source": "https://blog.crowdin.com/",
+      "feed_url": "https://blog.crowdin.com/feed.xml",
+      "title": "Crowdin Blog",
+      "saved": 21
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 64
+}
