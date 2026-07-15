@@ -83,6 +83,8 @@ apis:
   - url: graphql/crowdin-graphql.md
     type: GraphQL
 common:
+- type: AgenticAccess
+  url: agentic-access/crowdin-agentic-access.yml
 - type: TrustCenter
   url: security/crowdin-trust-center.yml
 - type: VulnerabilityDisclosure
