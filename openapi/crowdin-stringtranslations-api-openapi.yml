@@ -1,0 +1,83 @@
+openapi: 3.1.0
+info:
+  title: Crowdin REST API v2 Files StringTranslations API
+  description: 'Crowdin localization platform REST API v2 for managing projects, files,
+
+    source strings, string translations, glossaries, screenshots, and
+
+    webhooks. Endpoint inventory drawn from
+
+    https://support.crowdin.com/developer/api/v2/. Enterprise customers can
+
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
+
+    '
+  version: '2.0'
+  contact:
+    name: Crowdin Developers
+    url: https://support.crowdin.com/developer/api/v2/
+servers:
+- url: https://api.crowdin.com/api/v2
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: StringTranslations
+paths:
+  /projects/{projectId}/translations:
+    get:
+      summary: List string translations
+      operationId: listStringTranslations
+      tags:
+      - StringTranslations
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      - in: query
+        name: stringId
+        schema:
+          type: integer
+      - in: query
+        name: languageId
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Translations
+    post:
+      summary: Add translation
+      operationId: addTranslation
+      tags:
+      - StringTranslations
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stringId:
+                  type: integer
+                languageId:
+                  type: string
+                text:
+                  type: string
+      responses:
+        '201':
+          description: Created
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: PAT
+      description: Personal Access Token or OAuth 2 bearer token

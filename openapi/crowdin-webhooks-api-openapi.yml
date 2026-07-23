@@ -1,0 +1,77 @@
+openapi: 3.1.0
+info:
+  title: Crowdin REST API v2 Files Webhooks API
+  description: 'Crowdin localization platform REST API v2 for managing projects, files,
+
+    source strings, string translations, glossaries, screenshots, and
+
+    webhooks. Endpoint inventory drawn from
+
+    https://support.crowdin.com/developer/api/v2/. Enterprise customers can
+
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
+
+    '
+  version: '2.0'
+  contact:
+    name: Crowdin Developers
+    url: https://support.crowdin.com/developer/api/v2/
+servers:
+- url: https://api.crowdin.com/api/v2
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: Webhooks
+paths:
+  /projects/{projectId}/webhooks:
+    get:
+      summary: List webhooks
+      operationId: listWebhooks
+      tags:
+      - Webhooks
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Webhooks
+    post:
+      summary: Add webhook
+      operationId: addWebhook
+      tags:
+      - Webhooks
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                url:
+                  type: string
+                events:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '201':
+          description: Created
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: PAT
+      description: Personal Access Token or OAuth 2 bearer token

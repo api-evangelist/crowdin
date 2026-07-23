@@ -1,0 +1,90 @@
+openapi: 3.1.0
+info:
+  title: Crowdin REST API v2 Files Glossaries API
+  description: 'Crowdin localization platform REST API v2 for managing projects, files,
+
+    source strings, string translations, glossaries, screenshots, and
+
+    webhooks. Endpoint inventory drawn from
+
+    https://support.crowdin.com/developer/api/v2/. Enterprise customers can
+
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
+
+    '
+  version: '2.0'
+  contact:
+    name: Crowdin Developers
+    url: https://support.crowdin.com/developer/api/v2/
+servers:
+- url: https://api.crowdin.com/api/v2
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: Glossaries
+paths:
+  /glossaries:
+    get:
+      summary: List glossaries
+      operationId: listGlossaries
+      tags:
+      - Glossaries
+      responses:
+        '200':
+          description: Glossaries
+    post:
+      summary: Add glossary
+      operationId: addGlossary
+      tags:
+      - Glossaries
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                languageId:
+                  type: string
+      responses:
+        '201':
+          description: Created
+  /glossaries/{glossaryId}:
+    get:
+      summary: Get glossary
+      operationId: getGlossary
+      tags:
+      - Glossaries
+      parameters:
+      - in: path
+        name: glossaryId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Glossary
+    delete:
+      summary: Delete glossary
+      operationId: deleteGlossary
+      tags:
+      - Glossaries
+      parameters:
+      - in: path
+        name: glossaryId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: PAT
+      description: Personal Access Token or OAuth 2 bearer token

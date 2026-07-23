@@ -1,0 +1,112 @@
+openapi: 3.1.0
+info:
+  title: Crowdin REST API v2 Files API
+  description: 'Crowdin localization platform REST API v2 for managing projects, files,
+
+    source strings, string translations, glossaries, screenshots, and
+
+    webhooks. Endpoint inventory drawn from
+
+    https://support.crowdin.com/developer/api/v2/. Enterprise customers can
+
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
+
+    '
+  version: '2.0'
+  contact:
+    name: Crowdin Developers
+    url: https://support.crowdin.com/developer/api/v2/
+servers:
+- url: https://api.crowdin.com/api/v2
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: Files
+paths:
+  /projects/{projectId}/files:
+    get:
+      summary: List files
+      operationId: listFiles
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Files
+    post:
+      summary: Add file
+      operationId: addFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                storageId:
+                  type: integer
+                name:
+                  type: string
+      responses:
+        '201':
+          description: Created
+  /projects/{projectId}/files/{fileId}:
+    get:
+      summary: Get file
+      operationId: getFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      - in: path
+        name: fileId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: File
+    delete:
+      summary: Delete file
+      operationId: deleteFile
+      tags:
+      - Files
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      - in: path
+        name: fileId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: PAT
+      description: Personal Access Token or OAuth 2 bearer token

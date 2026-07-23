@@ -1,0 +1,114 @@
+openapi: 3.1.0
+info:
+  title: Crowdin REST API v2 Files SourceStrings API
+  description: 'Crowdin localization platform REST API v2 for managing projects, files,
+
+    source strings, string translations, glossaries, screenshots, and
+
+    webhooks. Endpoint inventory drawn from
+
+    https://support.crowdin.com/developer/api/v2/. Enterprise customers can
+
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
+
+    '
+  version: '2.0'
+  contact:
+    name: Crowdin Developers
+    url: https://support.crowdin.com/developer/api/v2/
+servers:
+- url: https://api.crowdin.com/api/v2
+  description: Production
+security:
+- BearerAuth: []
+tags:
+- name: SourceStrings
+paths:
+  /projects/{projectId}/strings:
+    get:
+      summary: List source strings
+      operationId: listSourceStrings
+      tags:
+      - SourceStrings
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Strings
+    post:
+      summary: Add source string
+      operationId: addSourceString
+      tags:
+      - SourceStrings
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                identifier:
+                  type: string
+                fileId:
+                  type: integer
+      responses:
+        '201':
+          description: Created
+  /projects/{projectId}/strings/{stringId}:
+    get:
+      summary: Get source string
+      operationId: getSourceString
+      tags:
+      - SourceStrings
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      - in: path
+        name: stringId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: String
+    delete:
+      summary: Delete source string
+      operationId: deleteSourceString
+      tags:
+      - SourceStrings
+      parameters:
+      - in: path
+        name: projectId
+        required: true
+        schema:
+          type: integer
+      - in: path
+        name: stringId
+        required: true
+        schema:
+          type: integer
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: PAT
+      description: Personal Access Token or OAuth 2 bearer token
