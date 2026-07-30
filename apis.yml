@@ -10,7 +10,20 @@ description: >-
   Official client libraries are published for JavaScript/TypeScript, Python,
   PHP, .NET, Java, and Ruby. Crowdin Enterprise customers get a per-tenant
   domain (e.g. https://{domain}.api.crowdin.com).
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Free · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crowdin.png
 tags:
 - Localization
 - Translation
@@ -26,11 +39,10 @@ apis:
 - aid: crowdin:api-v2
   name: Crowdin REST API v2
   description: >-
-    Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources
-    include projects, files, source strings, string translations, string
-    comments, screenshots, glossaries, MT engines, TMs, tasks, workflows,
-    reports, distributions, webhooks, users, groups, and OAuth applications.
-    Authenticate with a Personal Access Token or OAuth 2 bearer token.
+    Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources include projects, files, source
+    strings, string translations, string comments, screenshots, glossaries, MT engines, TMs, tasks, workflows,
+    reports, distributions, webhooks, users, groups, and OAuth applications. Authenticate with a Personal
+    Access Token or OAuth 2 bearer token.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
@@ -69,8 +81,8 @@ apis:
 - aid: crowdin:graphql
   name: Crowdin GraphQL API
   description: >-
-    Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via
-    Bearer token using a Personal Access Token or OAuth 2 access token.
+    Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via Bearer token using a Personal
+    Access Token or OAuth 2 access token.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://support.crowdin.com/developer/graphql-api/
   baseURL: https://api.crowdin.com/api/graphql
@@ -82,6 +94,76 @@ apis:
     url: https://support.crowdin.com/developer/graphql-api/
   - url: graphql/crowdin-graphql.md
     type: GraphQL
+- aid: crowdin:crowdin-files-api
+  name: Crowdin Files API
+  description: The Files API from Crowdin — 2 operation(s) for files.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-files-api-openapi.yml
+- aid: crowdin:crowdin-glossaries-api
+  name: Crowdin Glossaries API
+  description: The Glossaries API from Crowdin — 2 operation(s) for glossaries.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - Glossaries
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-glossaries-api-openapi.yml
+- aid: crowdin:crowdin-projects-api
+  name: Crowdin Projects API
+  description: The Projects API from Crowdin — 2 operation(s) for projects.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-projects-api-openapi.yml
+- aid: crowdin:crowdin-screenshots-api
+  name: Crowdin Screenshots API
+  description: The Screenshots API from Crowdin — 1 operation(s) for screenshots.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - Screenshots
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-screenshots-api-openapi.yml
+- aid: crowdin:crowdin-sourcestrings-api
+  name: Crowdin SourceStrings API
+  description: The SourceStrings API from Crowdin — 2 operation(s) for sourcestrings.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - SourceStrings
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-sourcestrings-api-openapi.yml
+- aid: crowdin:crowdin-stringtranslations-api
+  name: Crowdin StringTranslations API
+  description: The StringTranslations API from Crowdin — 1 operation(s) for stringtranslations.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - StringTranslations
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-stringtranslations-api-openapi.yml
+- aid: crowdin:crowdin-webhooks-api
+  name: Crowdin Webhooks API
+  description: The Webhooks API from Crowdin — 1 operation(s) for webhooks.
+  humanURL: https://support.crowdin.com/developer/api/v2/
+  baseURL: https://api.crowdin.com/api/v2
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/crowdin-webhooks-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/crowdin-agentic-access.yml
