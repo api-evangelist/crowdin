@@ -1,0 +1,26 @@
+{
+  "provider": "crowdin",
+  "sources": [
+    "crowdin-files-api-openapi.yml",
+    "crowdin-glossaries-api-openapi.yml",
+    "crowdin-projects-api-openapi.yml",
+    "crowdin-screenshots-api-openapi.yml",
+    "crowdin-sourcestrings-api-openapi.yml",
+    "crowdin-stringtranslations-api-openapi.yml",
+    "crowdin-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "crowdin-files-api-openapi.yml",
+    "crowdin-glossaries-api-openapi.yml",
+    "crowdin-projects-api-openapi.yml",
+    "crowdin-screenshots-api-openapi.yml",
+    "crowdin-sourcestrings-api-openapi.yml",
+    "crowdin-stringtranslations-api-openapi.yml",
+    "crowdin-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
