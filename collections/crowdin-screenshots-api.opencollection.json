@@ -1,0 +1,64 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Crowdin REST API v2 Files Screenshots API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Screenshots",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List screenshots",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/screenshots",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "List screenshots"
+        },
+        {
+          "info": {
+            "name": "Add screenshot",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/screenshots",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add screenshot"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

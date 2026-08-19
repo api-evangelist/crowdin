@@ -1,0 +1,74 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Crowdin REST API v2 Files StringTranslations API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "StringTranslations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List string translations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/translations",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "stringId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "languageId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List string translations"
+        },
+        {
+          "info": {
+            "name": "Add translation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/projects/:projectId/translations",
+            "params": [
+              {
+                "name": "projectId",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add translation"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

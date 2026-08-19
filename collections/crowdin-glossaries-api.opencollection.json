@@ -1,0 +1,86 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Crowdin REST API v2 Files Glossaries API",
+    "version": "2.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Glossaries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List glossaries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/glossaries"
+          },
+          "docs": "List glossaries"
+        },
+        {
+          "info": {
+            "name": "Add glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.crowdin.com/api/v2/glossaries",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add glossary"
+        },
+        {
+          "info": {
+            "name": "Get glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.crowdin.com/api/v2/glossaries/:glossaryId",
+            "params": [
+              {
+                "name": "glossaryId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get glossary"
+        },
+        {
+          "info": {
+            "name": "Delete glossary",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.crowdin.com/api/v2/glossaries/:glossaryId",
+            "params": [
+              {
+                "name": "glossaryId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete glossary"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
