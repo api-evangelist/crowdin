@@ -48,6 +48,15 @@ apis:
   baseURL: https://api.crowdin.com/api/v2
   tags:
   - REST
+  - Project
+  - File
+  - Strings
+  - Translations
+  - Screenshots
+  - Glossary
+  - Webhook
+  tags_raw:
+  - REST
   - Projects
   - Files
   - Strings
@@ -100,6 +109,8 @@ apis:
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI
@@ -110,6 +121,8 @@ apis:
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
   tags:
+  - Glossary
+  tags_raw:
   - Glossaries
   properties:
   - type: OpenAPI
@@ -120,6 +133,8 @@ apis:
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -160,6 +175,8 @@ apis:
   humanURL: https://support.crowdin.com/developer/api/v2/
   baseURL: https://api.crowdin.com/api/v2
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
