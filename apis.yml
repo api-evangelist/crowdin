@@ -64,7 +64,7 @@ apis:
   - Project
   - File
   - Strings
-  - Translations
+  - Translation
   - Screenshots
   - Glossary
   - Webhook
