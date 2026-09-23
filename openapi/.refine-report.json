@@ -1,13 +1,7 @@
 {
   "provider": "crowdin",
   "sources": [
-    "crowdin-files-api-openapi.yml",
-    "crowdin-glossaries-api-openapi.yml",
-    "crowdin-projects-api-openapi.yml",
-    "crowdin-screenshots-api-openapi.yml",
-    "crowdin-sourcestrings-api-openapi.yml",
-    "crowdin-stringtranslations-api-openapi.yml",
-    "crowdin-webhooks-api-openapi.yml"
+    "_original/crowdin-openapi.yml"
   ],
   "outputs": [
     "crowdin-files-api-openapi.yml",
@@ -21,6 +15,25 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "crowdin-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "crowdin-openapi.yml: declared missing tag: Files",
+    "crowdin-openapi.yml: declared missing tag: Glossaries",
+    "crowdin-openapi.yml: declared missing tag: Projects",
+    "crowdin-openapi.yml: declared missing tag: Screenshots",
+    "crowdin-openapi.yml: declared missing tag: SourceStrings",
+    "crowdin-openapi.yml: declared missing tag: StringTranslations",
+    "crowdin-openapi.yml: declared missing tag: Webhooks",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "crowdin-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-glossaries-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-screenshots-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-sourcestrings-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-stringtranslations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "crowdin-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Crowdin REST API v2 Files Webhooks API
+  title: Crowdin REST API v2 Webhooks API
   description: 'Crowdin localization platform REST API v2 for managing projects, files,
 
     source strings, string translations, glossaries, screenshots, and
@@ -9,9 +9,7 @@ info:
 
     https://support.crowdin.com/developer/api/v2/. Enterprise customers can
 
-    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.
-
-    '
+    use a per-tenant base URL like https://{domain}.api.crowdin.com/api/v2.'
   version: '2.0'
   contact:
     name: Crowdin Developers
