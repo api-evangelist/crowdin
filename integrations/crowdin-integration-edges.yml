@@ -2,6 +2,8 @@ generated: '2026-10-13'
 method: searched
 checked:
 - https://aws.amazon.com/marketplace/
+- https://github.com/marketplace?type=apps
+- https://plugins.jetbrains.com/
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -19,3 +21,39 @@ edges:
   seller_name: Crowdin
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: GitHub Marketplace (apps)
+  partner: github
+  partner_match: aggregator
+  type: marketplace
+  marketplace: github-apps
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://github.com/marketplace/crowdin
+  listing_count: 1
+  apps:
+  - Crowdin
+  publisher_name: Crowdin
+  badges:
+  - Verified creator
+  - Verified domain
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: JetBrains Marketplace
+  partner: jetbrains
+  partner_match: aggregator
+  type: marketplace
+  marketplace: jetbrains
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://plugins.jetbrains.com/vendor/8c4bdb1a-15cf-4a47-9b97-913daf2956ac
+  listing_count: 1
+  apps:
+  - Crowdin
+  publisher_name: Crowdin
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+source:
+- https://github.com/marketplace?type=apps
+- https://plugins.jetbrains.com/
