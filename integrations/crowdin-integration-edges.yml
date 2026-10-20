@@ -3,14 +3,25 @@ method: searched
 checked:
 - contentful/integrations/contentful-integration-edges.yml
 - https://aws.amazon.com/marketplace/
+- https://elia-association.org/membership/our-members/
 - https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
 - https://github.com/PipedreamHQ/pipedream/tree/d5872355ef27b4efa769f05352f2820c299a456e/components/
 - https://github.com/marketplace?type=apps
 - https://plugins.jetbrains.com/
+- https://store.crowdin.com/llms.txt
+- https://www.gala-global.org/sitemap.xml
 - https://zapier.com/api/v4/apps/
 - slack/integrations/slack-integration-edges.yml
 - zendesk/integrations/zendesk-integration-edges.yml
-marketplace_apps: []
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: crowdin
+  url: https://store.crowdin.com/llms.txt
+  app_count: 644
+  adapter: sweep-localization.py:crowdin
+  listed: 29
+  note: only domain-linked vendors / builders are written; unknown-builder listings stay out of position shares
 edges:
 - partner_name: AWS Marketplace
   partner: amazon-web-services
@@ -161,6 +172,819 @@ edges:
   detected: '2026-10-20'
   detected_by: mirror-platform-listings.py
   category: Knowledge and Content Management
+- partner_name: ActiveCampaign
+  app: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/activecampaign
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: activecampaign.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - ActiveCampaign
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q65063411 'ActiveCampaign' P856 http://www.activecampaign.com/ (wikidata P856, labelled
+      provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Akeneo
+  app: Akeneo
+  partner: akeneo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/akeneo-app
+  category: eCommerce
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: akeneo.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Akeneo
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q21125716 'Akeneo' P856 http://www.akeneo.com (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Anthropic
+  app: Anthropic
+  partner: anthropic
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/anthropic
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: anthropic.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Anthropic
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q116758847 'Anthropic' P856 https://www.anthropic.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Cohere
+  app: Cohere
+  partner: cohere
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/cohere
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: cohere.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Cohere
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q110363143 'Cohere' P856 https://cohere.com/ (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Contentful
+  app: Contentful
+  partner: contentful
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/contentful
+  category: CMS
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: contentful.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - Contentful
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q18348837 'Contentful' P856 https://www.contentful.com (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: DeepL Translator
+  app: DeepL Translator
+  partner: deepl
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/deepl-translator
+  category: Machine Translation
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: deepl.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - DeepL Translator
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q43968444 'DeepL' P856 https://www.deepl.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: DeepSeek
+  app: DeepSeek
+  partner: deepseek
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/deepseek
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: deepseek.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - DeepSeek
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q131577453 'DeepSeek' P856 https://deepseek.com (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: DigitalOcean Spaces
+  app: DigitalOcean Spaces
+  partner: digital-ocean
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/digital-ocean-spaces
+  category: Development, File Management & Storage
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: digitalocean.com
+    matched_by: domain+name-among-holders
+    listings: 2
+    sample_apps:
+    - DigitalOcean Spaces
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q114603573 'DigitalOcean Spaces' P856 https://www.digitalocean.com/products/spaces
+      (wikidata P856, labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Dropbox
+  app: Dropbox
+  partner: dropbox
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/dropbox_integration_app
+  category: File Management & Storage
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: dropbox.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Dropbox
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q142539 'Dropbox' P856 https://www.dropbox.com (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Groq
+  app: Groq
+  partner: groq
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/groq
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: groq.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Groq
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q126050137 'Groq' P856 https://groq.com/ (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Help Scout
+  app: Help Scout
+  partner: helpscout
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/helpscout
+  category: Customer Service
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: helpscout.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Help Scout
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q29096441 'Help Scout' P856 https://www.helpscout.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: IBM Watsonx
+  app: IBM Watsonx
+  partner: ibm
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/watson-language-translator
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: ibm.com
+    matched_by: domain+name-among-holders
+    listings: 2
+    sample_apps:
+    - IBM Cloud Object Storage
+    - IBM Watsonx
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q122443383 'watsonx' P856 https://www.ibm.com/watsonx (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: iContact
+  app: iContact
+  partner: icontact
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/icontact
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: icontact.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - iContact
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q5969894 'IContact' P856 http://www.iContact.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Jira Software
+  app: Jira Software
+  partner: jira
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/jira
+  category: Task Management, Translator Productivity, Development
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: atlassian.com
+    matched_by: domain+name-among-holders
+    listings: 3
+    sample_apps:
+    - Jira Software
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q1359246 'Jira' P856 https://www.atlassian.com/software/jira (wikidata P856, labelled
+      provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Klaviyo
+  app: Klaviyo
+  partner: klaviyo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/klaviyo
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: klaviyo.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Klaviyo
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q106631196 'Klaviyo' P856 https://www.klaviyo.com/fr/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: MailChimp
+  app: MailChimp
+  partner: mailchimp
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/mailchimp-app
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: mailchimp.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - MailChimp
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q6735673 'Mailchimp' P856 https://mailchimp.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: MinIO
+  app: MinIO
+  partner: minio
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/minio-object-storage
+  category: Development, File Management & Storage
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: min.io
+    matched_by: domain
+    listings: 2
+    sample_apps:
+    - MinIO
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q28956397 'MinIO' P856 https://minio.io/ (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Mistral AI
+  app: Mistral AI
+  partner: mistral
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/mistral-ai
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: mistral.ai
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Mistral AI
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q119718658 'Mistral AI' P856 https://mistral.ai/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: NestJS
+  app: NestJS
+  partner: nestjs
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/nestjs
+  category: File Formats
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: nestjs.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - NestJS
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q107015664 'NestJS' P856 https://nestjs.com/ (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: NextCloud
+  app: NextCloud
+  partner: nextcloud
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/nextcloud
+  category: File Management & Storage
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: nextcloud.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - NextCloud
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q25874683 'Nextcloud' P856 https://nextcloud.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: OpenAI
+  app: OpenAI
+  partner: openai
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/openai
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: openai.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - OpenAI
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q21708200 'OpenAI' P856 https://openai.com/ (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: OpenRouter
+  app: OpenRouter
+  partner: openrouter
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/openrouter
+  category: AI
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: openrouter.ai
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - OpenRouter
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q140795851 'OpenRouter' P856 https://openrouter.ai/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Prismic
+  app: Prismic
+  partner: prismic
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/prismic-rich-text-v2
+  category: File Formats, CMS
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: prismic.io
+    matched_by: domain
+    listings: 4
+    sample_apps:
+    - Prismic
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q111371297 'Prismic' P856 https://prismic.io (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Qualtrics
+  app: Qualtrics
+  partner: qualtrics
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/qualtrics
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: qualtrics.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Qualtrics
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q7268803 'Qualtrics' P856 https://www.qualtrics.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Scaleway
+  app: Scaleway
+  partner: scaleway
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/scaleway-cloud
+  category: Development, File Management & Storage
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: scaleway.com
+    matched_by: domain
+    listings: 2
+    sample_apps:
+    - Scaleway
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q3352745 'Scaleway' P856 https://www.scaleway.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Storyblok
+  app: Storyblok
+  partner: storyblok
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/storyblok
+  category: CMS
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: storyblok.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Storyblok
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q132654610 'Storyblok' P856 https://www.storyblok.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: SurveyMonkey
+  app: SurveyMonkey
+  partner: surveymonkey
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/surveymonkey
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: surveymonkey.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - SurveyMonkey
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q162852 'SurveyMonkey' P856 https://www.surveymonkey.com/ (wikidata P856, labelled
+      provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Webflow
+  app: Webflow
+  partner: webflow
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/webflow
+  category: CMS
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: webflow.com
+    matched_by: domain+name-among-holders
+    listings: 1
+    sample_apps:
+    - Webflow
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q20160951 'Webflow' P856 https://webflow.com (wikidata P856, labelled provenance step;
+      Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
+- partner_name: Wistia
+  app: Wistia
+  partner: wistia
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://store.crowdin.com/wistia
+  category: Marketing
+  contract_reference:
+    register: Crowdin Store (store.crowdin.com llms.txt + llms-txt app twins + author pages)
+    spec_file: null
+    role: crowdin-provider-built-app
+    registered_name: Crowdin
+    matched_domain: wistia.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Wistia
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-localization.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q8027755 'Wistia' P856 https://www.wistia.com/ (wikidata P856, labelled provenance
+      step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-localization.py
+  detected: '2026-10-20'
 source:
 - https://github.com/marketplace?type=apps
 - https://plugins.jetbrains.com/
