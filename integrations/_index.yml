@@ -90,44 +90,6 @@
     builder: Pipedream repo (component)
   status: not-a-workflow
   arazzo: null
-- slug: crowdin-contentful-own
-  label: Contentful (own)
-  partner: contentful
-  partner_name: Contentful (own)
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://www.contentful.com/marketplace/crowdin-app/
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: crowdin-slack-own
-  label: Slack (own)
-  partner: slack
-  partner_name: Slack (own)
-  category: Slack app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://slack.com/marketplace/AGCMHA7SQ-crowdinbot
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: crowdin-zendesk-own
-  label: Zendesk (own)
-  partner: zendesk
-  partner_name: Zendesk (own)
-  category: Knowledge and Content Management
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://www.zendesk.com/marketplace/apps/support/229552/crowdin/
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: crowdin-activecampaign
   label: ActiveCampaign
   partner: activecampaign
@@ -939,5 +901,56 @@
     detected: '2026-10-20'
     identity_source: wikidata Q8027755 'Wistia' P856 https://www.wistia.com/ (wikidata P856, labelled provenance
       step; Kin 2026-10-15 decision 1)
+  status: not-a-workflow
+  arazzo: null
+- slug: crowdin-contentful-own
+  label: Contentful (own)
+  partner: contentful
+  partner_name: Contentful (own)
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.contentful.com/marketplace/crowdin-app/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: crowdin-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/AGCMHA7SQ-crowdinbot
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: crowdin-zendesk-own
+  label: Zendesk (own)
+  partner: zendesk
+  partner_name: Zendesk (own)
+  category: Knowledge and Content Management
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.zendesk.com/marketplace/apps/support/229552/crowdin/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: crowdin-atlassian-own
+  label: Atlassian (own)
+  partner: atlassian
+  partner_name: Atlassian (own)
+  category: Language packs
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.atlassian.com/vendors/1215513/crowdin
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null

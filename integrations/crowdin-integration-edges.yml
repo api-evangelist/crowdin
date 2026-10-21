@@ -13,6 +13,7 @@ checked:
 - https://zapier.com/api/v4/apps/
 - slack/integrations/slack-integration-edges.yml
 - zendesk/integrations/zendesk-integration-edges.yml
+- atlassian/integrations/atlassian-integration-edges.yml
 marketplace_apps:
 - marketplace: own
   channel: partner-built
@@ -122,56 +123,6 @@ edges:
     builder: Pipedream repo (component)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: Contentful (own)
-  partner: contentful
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.contentful.com/marketplace/crowdin-app/
-  mirror_of: contentful/integrations/contentful-integration-edges.yml
-  apps:
-  - Crowdin
-  listing_count: 1
-  detected: '2026-10-15'
-  detected_by: mirror-platform-listings.py
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/AGCMHA7SQ-crowdinbot
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - CrowdinBot
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
-- partner_name: Zendesk (own)
-  partner: zendesk
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.zendesk.com/marketplace/apps/support/229552/crowdin/
-  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
-  apps:
-  - Crowdin
-  listing_count: 1
-  detected: '2026-10-20'
-  detected_by: mirror-platform-listings.py
-  category: Knowledge and Content Management
 - partner_name: ActiveCampaign
   app: ActiveCampaign
   partner: activecampaign
@@ -985,6 +936,73 @@ edges:
       step; Kin 2026-10-15 decision 1)
   detected_by: sweep-localization.py
   detected: '2026-10-20'
+- partner_name: Contentful (own)
+  partner: contentful
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.contentful.com/marketplace/crowdin-app/
+  mirror_of: contentful/integrations/contentful-integration-edges.yml
+  apps:
+  - Crowdin
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/AGCMHA7SQ-crowdinbot
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - CrowdinBot
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/229552/crowdin/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - Crowdin
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Knowledge and Content Management
+- partner_name: Atlassian (own)
+  partner: atlassian
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.atlassian.com/vendors/1215513/crowdin
+  mirror_of: atlassian/integrations/atlassian-integration-edges.yml
+  apps:
+  - Crowdin localization management platform
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: Language packs
 source:
 - https://github.com/marketplace?type=apps
 - https://plugins.jetbrains.com/
