@@ -14,6 +14,7 @@ checked:
 - slack/integrations/slack-integration-edges.yml
 - zendesk/integrations/zendesk-integration-edges.yml
 - atlassian/integrations/atlassian-integration-edges.yml
+- drupal/integrations/drupal-integration-edges.yml
 marketplace_apps:
 - marketplace: own
   channel: partner-built
@@ -1003,6 +1004,23 @@ edges:
   detected: '2026-10-21'
   detected_by: mirror-platform-listings.py
   category: Language packs
+- partner_name: Drupal (own)
+  partner: drupal
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.drupal.org/project/tmgmt_crowdin
+  mirror_of: drupal/integrations/drupal-integration-edges.yml
+  apps:
+  - Crowdin Translation Plugin
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Drupal contributed module
 source:
 - https://github.com/marketplace?type=apps
 - https://plugins.jetbrains.com/

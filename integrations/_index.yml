@@ -954,3 +954,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: crowdin-drupal-own
+  label: Drupal (own)
+  partner: drupal
+  partner_name: Drupal (own)
+  category: Drupal contributed module
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.drupal.org/project/tmgmt_crowdin
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
