@@ -980,3 +980,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: crowdin-adobe-creative-cloud-own
+  label: Adobe Creative Cloud (own)
+  partner: adobe-creative-cloud
+  partner_name: Adobe Creative Cloud (own)
+  category: Adobe Exchange Creative Cloud listing (Express)
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://exchange.adobe.com/apps/cc/7f4e39a7/crowdin-for-adobe-xd
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
