@@ -1,4 +1,4 @@
-# Crowdin (crowdin)
+# Crowdin
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,85 +66,137 @@
 
 Crowdin is a localization management platform for software, mobile, games, and documentation. It offers a REST API v2 covering projects, files, strings, translations, screenshots, glossaries, MT engines, and webhooks, plus a single GraphQL endpoint. Authentication uses Personal Access Tokens or OAuth 2. Official client libraries are published for JavaScript/TypeScript, Python, PHP, .NET, Java, and Ruby. Crowdin Enterprise customers get a per-tenant domain (e.g. https://{domain}.api.crowdin.com).
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/crowdin/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/crowdin/refs/heads/main/apis.yml)
+**Areas:** Localization · Translation · TMS · REST · GraphQL · Developer Tools · Enterprise
 
-## Tags
+## Crowdin on APIs.io
 
-- Localization
-- Translation
-- TMS
-- REST
-- GraphQL
-- Developer Tools
-- Enterprise
+Everything profiled for Crowdin is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/crowdin/](https://apis.io/providers/crowdin/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (9)
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+- [Crowdin REST API v2](https://apis.io/apis/crowdin/api-v2/) — Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources include projects, files, source strings, string translations, string comments,…
+- [Crowdin GraphQL API](https://apis.io/apis/crowdin/graphql/) — Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via Bearer token using a Personal Access Token or OAuth 2 access token.
+- [Crowdin Files API](https://apis.io/apis/crowdin/crowdin-files-api/) — The Files API from Crowdin — 2 operation(s) for files.
+- [Crowdin Glossaries API](https://apis.io/apis/crowdin/crowdin-glossaries-api/) — The Glossaries API from Crowdin — 2 operation(s) for glossaries.
+- [Crowdin Projects API](https://apis.io/apis/crowdin/crowdin-projects-api/) — The Projects API from Crowdin — 2 operation(s) for projects.
+- [Crowdin Screenshots API](https://apis.io/apis/crowdin/crowdin-screenshots-api/) — The Screenshots API from Crowdin — 1 operation(s) for screenshots.
+- [Crowdin SourceStrings API](https://apis.io/apis/crowdin/crowdin-sourcestrings-api/) — The SourceStrings API from Crowdin — 2 operation(s) for sourcestrings.
+- [Crowdin StringTranslations API](https://apis.io/apis/crowdin/crowdin-stringtranslations-api/) — The StringTranslations API from Crowdin — 1 operation(s) for stringtranslations.
+- [Crowdin Webhooks API](https://apis.io/apis/crowdin/crowdin-webhooks-api/) — The Webhooks API from Crowdin — 1 operation(s) for webhooks.
 
-## APIs
+### Published properties
 
-### Crowdin REST API v2
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Full-coverage REST API for Crowdin and Crowdin Enterprise. Resources include projects, files, source strings, string translations, string comments, screenshots, glossaries, MT engines, TMs, tasks, workflows, reports, distributions, webhooks, users, groups, and OAuth applications. Authenticate with a Personal Access Token or OAuth 2 bearer token.
+#### GraphQL (1)
 
-- **Human URL:** [https://support.crowdin.com/developer/api/v2/](https://support.crowdin.com/developer/api/v2/)
-- **Base URL:** `https://api.crowdin.com/api/v2`
+GraphQL schemas.
 
-#### Tags
+- [Crowdin GraphQL API](https://apis.io/graphqls/crowdin/crowdin-graphql/)
 
-- REST
-- Projects
-- Files
-- Strings
-- Translations
-- Screenshots
-- Glossaries
-- Webhooks
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Documentation](https://support.crowdin.com/developer/api/v2/)
-- [Developer Portal](https://support.crowdin.com/developer/)
-- [SDK](https://github.com/crowdin/crowdin-api-client-js)
-- [SDK](https://pypi.org/project/crowdin-api-client/)
-- [SDK](https://packagist.org/packages/crowdin/crowdin-api-client)
-- [SDK](https://www.nuget.org/packages/Crowdin.Api/)
-- [SDK](https://github.com/crowdin/crowdin-api-client-java)
-- [SDK](https://github.com/crowdin/crowdin-api-client-ruby)
-- [Postman Collection](collections/crowdin.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/crowdin.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Crowdin Agentic Access](https://apis.io/agentic-access/crowdin/crowdin-agentic-access/)
 
-### Crowdin GraphQL API
+#### Collections (8)
 
-Single-endpoint GraphQL API for Crowdin Enterprise. Authentication via Bearer token using a Personal Access Token or OAuth 2 access token.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://support.crowdin.com/developer/graphql-api/](https://support.crowdin.com/developer/graphql-api/)
-- **Base URL:** `https://api.crowdin.com/api/graphql`
+- [Crowdin REST API v2](https://apis.io/collections/crowdin/open-crowdin/)
+- [Crowdin REST API v2 Files API](https://apis.io/collections/crowdin/open-crowdin-files-api/)
+- [Crowdin REST API v2 Files Glossaries API](https://apis.io/collections/crowdin/open-crowdin-glossaries-api/)
+- [Crowdin REST API v2 Files Projects API](https://apis.io/collections/crowdin/open-crowdin-projects-api/)
+- [Crowdin REST API v2 Files Screenshots API](https://apis.io/collections/crowdin/open-crowdin-screenshots-api/)
+- [Crowdin REST API v2 Files SourceStrings API](https://apis.io/collections/crowdin/open-crowdin-sourcestrings-api/)
+- [Crowdin REST API v2 Files StringTranslations API](https://apis.io/collections/crowdin/open-crowdin-stringtranslations-api/)
+- [Crowdin REST API v2 Files Webhooks API](https://apis.io/collections/crowdin/open-crowdin-webhooks-api/)
 
-#### Tags
+#### Security (4)
 
-- GraphQL
-- Enterprise
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Properties
+- [Crowdin Authentication](https://apis.io/security/crowdin/crowdin-authentication/)
+- [Crowdin Domain Security](https://apis.io/security/crowdin/crowdin-domain-security/)
+- [Crowdin Trust Center](https://apis.io/security/crowdin/crowdin-trust-center/)
+- [Crowdin Vulnerability Disclosure](https://apis.io/security/crowdin/crowdin-vulnerability-disclosure/)
 
-- [Documentation](https://support.crowdin.com/developer/graphql-api/)
-- [Postman Collection](collections/crowdin.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/crowdin.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
+
+- [Crowdin Plans Pricing](https://apis.io/plans/crowdin/crowdin-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Crowdin Rate Limits](https://apis.io/rate-limits/crowdin/crowdin-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Crowdin Finops](https://apis.io/finops/crowdin/crowdin-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://crowdin.com/)
 - [Documentation](https://support.crowdin.com/developer/)
-- [Git Hub](https://github.com/crowdin)
-- [LinkedIn](https://www.linkedin.com/company/crowdin)
-- [Plans](plans/crowdin-plans-pricing.yml)
-- [Rate Limits](rate-limits/crowdin-rate-limits.yml)
-- [Fin Ops](finops/crowdin-finops.yml)
+- [Blog](https://blog.crowdin.com/feed.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 48.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 50.0 |
+| Access clarity | 13.2 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 22.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/crowdin/](https://apis.io/providers/crowdin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Crowdin: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/crowdin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
